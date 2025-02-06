@@ -16,9 +16,10 @@ import lombok.*;
 public class Cliente {
     @Id //Indica la primary key
     @GeneratedValue(strategy = GenerationType.IDENTITY) //Va a generar los id de manera automatica
-    private Integer id; //Cuando se utiliza un valor integer y no se especifica el valor se toma el valor de null
+    //Cuando se utiliza un valor integer y no se especifica el valor se toma el valor de null
+    private Integer id;
     private String nombre;
     private String apellido;
-    private String membresia;
+    private Integer membresia;
 
 }
