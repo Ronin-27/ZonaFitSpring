@@ -14,8 +14,9 @@ import java.util.Scanner;
 
 import static java.lang.Integer.parseInt;
 
-@SpringBootApplication
-public class ZonaFitApplication implements CommandLineRunner {
+@SpringBootApplication //Es el inicio del proyecto, y es donde spring boot comenzará a buscar todos los comporentes
+public class ZonaFitApplication implements CommandLineRunner { //la clase commandlinerunner nos ayuda inicializar el proyecto teniendo como unico metodo
+	//El metodo run
 
 	@Autowired
 	private IClienteServicio clienteServicio;
